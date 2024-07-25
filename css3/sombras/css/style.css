@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+body {
+    background-color: lightsteelblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+nav {
+    background-color: lightgray;
+    padding: 7px;
+
+    /* Criando sombra externa | DevTools 
+    
+    Use sombras discretas*/
+    box-shadow: 6px 2px 3px #00000080;
+}
+
+nav > a {
+    text-decoration: none;
+    color: rgb(41, 158, 209);
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+main {
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+    margin: 10px;
+}
+
+article {
+    background-color: white;
+    padding: 10px;
+}
+
+article > aside {
+    background-color: rgb(187, 184, 184);
+    color: black;
+}
+
+footer > p {
+    padding: 0px;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    margin: 2px;
+    padding: 1.5px;
+
+    /* Horizontal | Vertical | Enevoamento | Cor */
+    box-shadow: inset 6px 5px 1px rgb(174, 30, 30);
+}

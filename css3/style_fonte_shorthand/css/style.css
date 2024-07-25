@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Montserrat', serif;
+    
+    /* Definindo o peso da fonte: espessura
+    
+    Variações básicas ->
+    normal
+    ligther: mais fino
+    bold: negrito
+    bolder: mais negritos que bold
+    
+    font-weight: 300;
+    */
+    font-weight: lighter;
+
+    /* Definindo o estilo: italico / normal */
+    font-style: italic;
+}
+
+h2 {
+    
+    /* Shorthand Font: Declaração de estilos em 1 linha
+
+    - font-style -> font-weight -> font-size -> font-family */
+
+    font: italic bold 1.5em 'Montserrat', Georgia, 'Times New Roman', Times, serif;
+    
+    /* font-family: 'Montserrat', Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1em;
+    font-style: italic;  */
+}
+
+h1 {
+    font: bolder 2em 'Montserrat', sans-serif ;
+    text-decoration: underline;  /* Define o sublinhado */
+}
+
+p {
+    font-weight: 500;
+}

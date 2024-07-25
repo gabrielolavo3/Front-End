@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudio em HTML 5</title>
+</head>
+<body>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Inserindo um áudio em HTML5</p>
+
+    <!-- 
+    Forma simplificada!
+    <audio src="midia/Alien-or-Cake.mp3" controls></audio> -->
+
+    <!-- Forma segundária! Compatível com mais navegadores -->
+
+    <audio preload="metadata" controls loop autoplay>
+        <source src="midia/Alien-or-Cake.mp3" type="audio/mpeg"> <!-- Arquivo MP3 -->
+        <source src="midia/Alien-or-Cake.ogg" type="audio/ogg"> <!-- Arquivo OGG -->
+        <source src="midia/Alien-or-Cake.wav" type="audio/wav"> <!-- Arquivo WAV -->
+        <p><a href="midia/Alien-or-Cake.mp3">Clique aqui</a>para baixar, caso não reproduza no seu navegador</p>
+    </audio>
+
+    <!-- Evita o uso de arquivo WAV! São pesados -->
+     <!-- A tag audio irá tentar carregar o source mais compatível com o navegador -->
+
+</body>
+</html>

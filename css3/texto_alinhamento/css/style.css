@@ -1,0 +1,20 @@
+body {
+    font: normal 1.5em 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center; /* Alinhamento centralizado */
+}
+
+h2 {
+    text-align: right; /* Alinhamento a direita */
+}
+
+h3 {
+    text-align: left; /* Alinhamento a esquerda */
+}
+
+p {
+    text-align: justify; /* Alinhamento justificado */
+    text-indent: 20px; /* Afastamento da margem */
+}

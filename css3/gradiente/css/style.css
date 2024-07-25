@@ -1,0 +1,13 @@
+* { /* Configuração geral CSS */
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(45deg, #CF2B23, #A53C37, #FA0C00);
+
+    /* 
+    Segunda versão
+    background: linear-gradient(#DC0001, #FFBD05, #DC0001); */
+
+    /* background-image: radial-gradient(circle, #DC0001, #FFBD05, #DC0001); */
+}

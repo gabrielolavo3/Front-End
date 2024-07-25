@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo em HTML5</title>
+</head>
+<body>
+    <h1>Vídeo hospedado localmente</h1>
+    <p>Esse é um exemplo de vídeo hospedado no meu PC</p>
+
+    <!-- <video src="midia/video-mp4.mp4"  width="500px" controls></video> -->
+
+    <video width="500px" poster="image/poster.jpg" controls>
+        <source src="midia/video-mp4.mp4" type="video/mp4">
+        <source src="midia/video-ogv.ogv" type="video/ogg">
+        <source src="midia/Video-webm.webm" type="video/webm">
+        <p>Seu navegador não é compatível com os vídeos</p>
+    </video>
+
+    <h1>Inserindo vídeo do YT</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=352lpPG5WPWlyWww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!-- Pelo YT, o consumo de banda larga é do YT e não sobrecarrega o site -->
+
+</body>
+</html>

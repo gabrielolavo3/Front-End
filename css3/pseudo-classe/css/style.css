@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+.divs {
+    display: inline-block; /* Alinha itens na mesma linha */
+    background-color: lightslategray;
+    text-align: center;
+    height: 200px;  /* Define a altura */
+    width: 200px; /* Define a largura */
+    border: 2.5px solid black;
+}
+
+/* Pseudo-class: altera o estado de um item */
+
+.divs:hover {
+    /* Muda a cor ao passar o mouse */
+    background-color: burlywood;
+}
+
+/* Indica uma tag dentro de outra tag */
+div > p {
+    display: none; /* Esconde um elemento */
+}
+
+/* Aplica o pseudo na tag pai e manda para a tag filho */
+div:hover > p {
+    display: block; /* Mostra um elemento */
+    color: orange;
+    background-color: lightskyblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 250px;
+}

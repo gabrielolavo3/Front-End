@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@font-face {
+    font-family: 'Vintage'; /* Define nome da fonte baixada */
+    src: url('../font/JMH-Typewriter.otf') format('opentype'), url('../font/JMH-Typewriter.ttf') format('truetype'); /* Indica o nome do arquivo e o tipo de arquivo */
+    font-weight: normal;
+    font-style: normal;
+
+    /* Tipos de Format()
+
+    - opentype(otf)
+    - truetype(ttf)
+    - embedded-opentype
+    - truetype-aat (Apple Advanced Typography)
+    - svg
+     */
+}
+
+h1 {
+    font-family: 'Vintage', serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-family: 'Josefin Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

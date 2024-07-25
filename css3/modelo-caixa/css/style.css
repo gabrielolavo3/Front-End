@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    background-color: gray;
+    height: 350px; /* Define altura(vertical) */
+    width: 300px; /* Define largura(horizontal) */
+    border-width: 3px; /* Tamanho da borda */
+    border-style: solid; /* Tipo da borda */
+    border-color: red; /* Cor da borda */
+
+    padding-top: 10px; /* Preenchimento em cima */
+    padding-right: 10px; /* Preenchimento na direita */
+    padding-bottom: 10px; /* Preenchimento em baixo */
+    padding-left: 10px; /* Preenchimento na esquerda */
+    margin: 10px 20px;
+}
+
+a {
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(0, 247, 255);
+    padding-top: 5px; 
+    padding-right: 25px; 
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+div {
+    background-color: lightblue;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+
+    /* Shorthands em CSS */
+    
+    border: 3px dashed black;
+    margin: 10px 20px 12px 10px;
+    padding: 10px;
+
+    /* margin: 10px; -> Define o padding igualmente para todos os lados 
+
+    margin: auto; 
+    margin: 10px auto 12px auto; -> Usados para Centraliza os itens na tela
+
+    margin: 10px 20px -> Top e Bottom recebem 10 e Right e Left 20 
+    
+    */
+}

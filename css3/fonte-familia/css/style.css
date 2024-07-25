@@ -1,0 +1,42 @@
+/* Fonte padrões de navegador: Arial Verdanda Helvetica */
+
+body {
+    /* Com essa sugestão, o CSS vai verificar se o navegador é compátivel com a Arial, Helvetica ou senão um fonte não serifada */
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: black;
+    
+    /* 
+    Exemplos que o css pode escolher sozinho
+
+    font-family: sans-serif;
+    font-family: monospace;
+    font-family: serif; */
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(24, 97, 126);
+    font-size: 2em;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(33, 136, 161);
+    font-size: 1.5em;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3.5em;
+}
+
+/* Sobre os font-size, o melhor a se usar é o px e em
+1em = 16px
+
+Em leva em consideração o tamanho original da fonte. Ex.: 2em = 32px
+
+em é melhor que px pq o px pode haver variação de acordo ao tamanho de tela do usuário
+
+*/

@@ -1,0 +1,35 @@
+body {
+    background-color: #bde6b5;
+}
+
+h1#titulo-principal {
+    text-align: center;
+    background-color: #3B862C;
+    color: white;
+}
+
+.titulo-topico {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.basico {
+    color: rgb(67, 141, 67);
+}
+
+.intermediario {
+    color: rgb(148, 157, 66);
+}
+
+.avancado {
+    color: rgb(149, 63, 63);
+}
+
+.destaque {
+    font-weight: bolder;
+    background-color: #6CF550;
+}
+
+#feed {
+    text-align: right;
+    font: italic bolder 1.5em 'Arial', serif;
+}

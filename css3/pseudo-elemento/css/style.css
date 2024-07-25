@@ -1,0 +1,48 @@
+/* 
+    Seletores Personalizados
+    
+    # = id
+    . = class
+    : = pseudo-class
+    :: = pseudo-elemento
+
+*/
+
+body {
+    font: normal normal 1em sans-serif;
+}
+
+a {
+    color: rgb(240, 160, 11);
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkgrey;
+    text-decoration: underline;
+}
+
+/* Funciona quando é acessado */
+
+a:visited {
+    color: brown;
+}
+
+/* Funciona quando é clicado */
+
+a:active {
+    color: lightgreen;
+}
+
+/* Pseudo-elemento: modifica o conteúdo dentro da tag */
+
+.pseudo::before {
+    content: 'Clique: ';
+    color: violet;
+}
+
+.pseudo::after {
+    content: ' { link }';
+    color: gray;
+    text-decoration: none;
+}
