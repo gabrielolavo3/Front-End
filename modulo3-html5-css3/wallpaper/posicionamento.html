@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando posicionamento</title>
+    <style>
+        body {
+            height: 98vh;
+        }
+
+        div.bloco {
+            width: 400px;
+            height: 400px;
+            display: inline-block;
+            border: 2px solid rgba(0, 0, 0, 0.833);
+            margin: 5px;
+            border-radius: 10px;
+            background-image: url('https://pm1.aminoapps.com/6694/7932f2944b569925a8eb4d33a522f6e7c4b6a6cb_hq.jpg');
+            background-repeat: no-repeat;
+        }
+
+        /* Topo na esquerda */
+        div#div1 {
+            background-position: left top;
+        }
+
+        /* Rodapé na esquerda */
+        div#div2 {
+            background-position: left bottom;
+        }
+
+        /* Topo na direita */
+        div#div3 {
+            background-position: right top;
+        }
+
+        /* Rodapé na direita */
+        div#div4 {
+            background-position: right bottom;
+        }
+
+        /* Centro na esquerda */
+        div#div5 {
+            background-position: left center;
+        }
+
+        /* Centro na direita */
+        div#div6 {
+            background-position: right center;
+        }
+
+        /* Centro da imagem */
+        div#div7 {
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bloco" id="div1"></div>
+    <div class="bloco" id="div2"></div>
+    <div class="bloco" id="div3"></div>
+    <div class="bloco" id="div4"></div>
+    <div class="bloco" id="div5"></div>
+    <div class="bloco" id="div6"></div>
+    <div class="bloco" id="div7"></div>
+</body>
+</html>
