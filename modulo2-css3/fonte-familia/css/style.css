@@ -15,7 +15,7 @@ body {
     font-family: serif; */
 }
 
-h1{
+h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(24, 97, 126);
     font-size: 2em;
@@ -31,6 +31,11 @@ p {
     font-family: 'Courier New', Courier, monospace;
     font-size: 3.5em;
 }
+
+/* 
+    Medidas absolutas: cm, mm, in, px, pt, pc
+    Medidas relativas: em, ex, rem, vw, vh, % 
+*/
 
 /* Sobre os font-size, o melhor a se usar é o px e em
 1em = 16px

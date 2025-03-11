@@ -34,7 +34,7 @@ h2 {
 }
 
 h1 {
-    font: bolder 2em 'Montserrat', sans-serif ;
+    font: normal bolder 2em 'Montserrat', sans-serif ;
     text-decoration: underline;  /* Define o sublinhado */
 }
 
