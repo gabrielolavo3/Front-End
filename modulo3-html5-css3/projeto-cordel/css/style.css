@@ -1,19 +1,32 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif; 
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body {    
     min-height: 100vh; /* 100% da altura da viewport */
-    background-color: darkgray;
+    background-color: darkgray;    
+    font-family: var(--fonte1);
 }
 
 header {
     background-color: black;
     color: white;
     text-align: center;
+    font-family: var(--fonte2);
 }
 
 header > h1 {
@@ -21,6 +34,7 @@ header > h1 {
     /* Maneiras de transformar o texto em maiúsculo
     text-transform: uppercase; */
     font-variant: small-caps;
+    font-size: 10vh; /* Ajusta o tamanho para a largura da viewport (vw) */
 }
 
 header > p {
@@ -42,6 +56,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em; /* Espaçamento entre linhas */
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 2em;
 }
 
 section.normal {
@@ -49,13 +65,14 @@ section.normal {
     color: black;
 }
 
-section.imagem {
+section.imagem {    
     background-color: rgb(51, 51, 51);
     color: white;
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block; /* Transforma em uma caixa que se adapta ao tamanho do conteúdo */
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.253);
 }
 
@@ -64,4 +81,24 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+@media (max-width: 1024px) and (min-width: 720px) {
+    header > h1 {
+        font-size: 10vw;
+    }
+    
+    section {
+        font-size: 3vw; 
+    }
+}
+
+@media (max-width: 719px) {
+    header > h1 {
+        font-size: 10vw;
+    }
+    
+    section {
+        font-size: 3vw; 
+    }
 }
