@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhando o conteúdo em tabelas</title>
+</head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            height: 400px;
+            border-collapse: separate; /* Configuração padrão */
+            border-collapse: collapse; /* Retira o espaçamento entre as linhas e colunas*/
+        }
+       
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center; /* Alinhamento horizontal de caixa e table: center, right e left*/
+            vertical-align: middle; /* Alinhamento vertical de caixa e table: top, bottom e middle*/
+        }    
+        
+        .numero {
+            text-align: right;
+        }
+    </style>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!-- Hierarquia de Tabelas Simples 
+         Table = tabela
+            Table Row = linha de tabela
+                Table Header = cabeçalho de tabela
+                Table Data  = dado de tabela
+    -->
+
+    <table>
+        <tr> <!-- Primeira linha -->
+            <td>A1</td> <!-- Dado de uma tabela -->
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr> <!-- Segunda linha -->
+            <td>A2</td>
+            <td class="numero">B2</td>
+            <td>C2</td>
+        </tr>
+        <tr> <!-- Terceira linha -->
+            <td>A3</td>
+            <td>B3</td>
+            <td class="numero">C3</td>
+        </tr>
+        <tr> <!-- Quarta linha -->
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+
+    <!-- O fechamento de tag tr e td são opcionais -->
+</body>
+</html>

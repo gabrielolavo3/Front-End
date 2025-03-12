@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela semântica</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tbody > tr > th {
+            text-align: left;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- Estrutura de Tabela Grande e Semântica
+        TABLE
+            THEAD = Cabeça
+                TD, TR, TH
+            TBODY = Corpo da tabela
+                TD, TR, TH
+            TFOOT = Rodapé da tabela
+                TD, TR, TH
+    -->
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th> <!-- Título de tabela -->
+                <th>Populaçao</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>São Paulo</th>
+                <td>45.919.049</td> <!-- Dado de tabela -->
+            </tr>
+            <tr>
+                <th>Minas Gerais</th>
+                <td>21.168.791</td>
+            </tr>
+            <tr>
+                <th>Rio de Janeiro</th>
+                <td>17.264.943</td>
+            </tr>            
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td>0000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
