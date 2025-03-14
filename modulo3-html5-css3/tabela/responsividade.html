@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade para tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 750px;
+        }
+
+        caption {
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        th {
+            background-color: rgb(145, 145, 145);
+            color: white;
+        }
+
+        /* Adicionado responsividade */
+        div {
+            overflow-x: auto;
+        }
+
+        /* PROPRIEDADE - OVERFLOW:
+
+        overflow-x - A propriedade CSS "overflow-x" é usada para definir o que deve ser mostrado quando o conteúdo transborda dos extremos esquerdo e direito de um elemento em bloco (eixo horizontal).
+
+        overflow-y - A propriedade CSS "overflow-y" define o que deve ser mostrado quando o conteúdo transborda dos extremos superior e inferior de um elemento em bloco (eixo vertical).
+
+        overflow - A propriedade CSS "overflow" é uma abreviação para as propriedades "overflow-x" e "overflow-y" em uma única declaração.
+
+        As propriedades overflow aceitam alguns valores, dentre os principais:
+
+        visible - O valor "visible" exibe o conteúdo que exceder o tamanho do elemento fora da área designada para ele,  (valor padrão).
+
+        hidden - O valor "hidden" simplesmente corta o conteúdo que exceder o tamanho do elemento.
+
+        scroll - O valor "scroll" exibe "a todo momento" barras de rolagem para permitir que o usuário role o conteúdo que exceder o tamanho do elemento.
+
+        auto - O valor "auto" exibe barras de rolagem somente quando necessário (largura ou altura insuficientes) */
+    </style>    
+</head>
+<body>
+    <h1>Tabela para telas pequenas</h1>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea provident asperiores officiis inventore eius pariatur neque voluptatum distinctio ad modi maxime eum animi hic, maiores suscipit a odio sequi nihil alias magni nesciunt? Dolores officiis consectetur quos pariatur consequatur? Minus ad consectetur aliquam! Ratione laudantium quam nam. Labore, vitae magnam.
+    </p>    
+    <div>
+        <table>
+            <caption>Tabelas responsivas</caption>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Jan</th>
+                        <th>Fev</th>
+                        <th>Mar</th>
+                        <th>Abr</th>
+                        <th>Mai</th>
+                        <th>Jun</th>
+                        <th>Jul</th>
+                        <th>Ago</th>
+                        <th>Set</th>
+                        <th>Out</th>
+                        <th>Nov</th>
+                        <th>Dez</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>TV 40*</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>Home Theader</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>Samsung Galaxy S20</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>iPad Max</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>PlayStation 4</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>Lava louças</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>Amazon Echo</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>       
+</body>
+</html>
