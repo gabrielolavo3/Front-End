@@ -14,6 +14,17 @@
             border-collapse: collapse;
         }
 
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 10px;
+            border-collapse: collapse;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
         td, th {
             border: 1px solid black;
             padding: 10px;
@@ -21,11 +32,16 @@
 
         tbody > tr > th {
             text-align: left;
+            font-weight: normal;
         }
 
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        td.num {
+            text-align: right;
         }
     </style>
 </head>
@@ -33,41 +49,144 @@
     <h1>Uso de tabelas grandes</h1>
     <!-- Estrutura de Tabela Grande e Semântica
         TABLE
+            CAPTION - Legenda/Título principal
             THEAD = Cabeça
                 TD, TR, TH
             TBODY = Corpo da tabela
                 TD, TR, TH
             TFOOT = Rodapé da tabela
                 TD, TR, TH
+        
+        Uso de Escopo
+        <th scope="col">Estado</th> Indica se os dados da coluna estão ao lado ou abaixo. Col significa abaixo. Row significa ao lado
     -->
     
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th> <!-- Título de tabela -->
-                <th>Populaçao</th>
+                <th scope="col">Estado</th> <!-- Título de tabela -->
+                <th scope="col" style="width: 50px;">Populaçao</th> <!-- Coluna com escopo Col e largura pontual -->
             </tr>
         </thead>
         <tbody>
             <tr>
                 <th>São Paulo</th>
-                <td>45.919.049</td> <!-- Dado de tabela -->
+                <td class="num">45.919.049</td> <!-- Dado de tabela -->
             </tr>
             <tr>
                 <th>Minas Gerais</th>
-                <td>21.168.791</td>
+                <td class="num">21.168.791</td>
             </tr>
             <tr>
                 <th>Rio de Janeiro</th>
-                <td>17.264.943</td>
-            </tr>            
-        </tbody>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <th>Bahia</th>
+                <td class="num">14.850.513</td>
+            </tr>
+            <tr>
+                <th>Paraná</th>
+                <td class="num">11.824.665</td>
+            </tr>
+            <tr>
+                <th>Rio Grande do Sul</th>
+                <td class="num">11.229.915</td>
+            </tr>
+            <tr>
+                <th>Pernambuco</th>
+                <td class="num">9.539.029</td>
+            </tr>
+            <tr>
+                <th>Ceará</th>
+                <td class="num">9.233.656</td>
+            </tr>
+            <tr>
+                <th>Pará</th>
+                <td class="num">8.664.306</td>
+            </tr>
+            <tr>
+                <th>Santa Catarina</th>
+                <td class="num">8.058.441</td>
+            </tr>
+            <tr>
+                <th>Goiás</th>
+                <td class="num">7.350.483</td>
+            </tr>
+            <tr>
+                <th>Maranhão</th>
+                <td class="num">7.010.960</td>
+            </tr>
+            <tr>
+                <th>Amazonas</th>
+                <td class="num">4.281.209</td>
+            </tr>
+            <tr>
+                <th>Paraíba</th>
+                <td class="num">4.145.040</td>
+            </tr>
+            <tr>
+                <th>Espírito Santo</th>
+                <td class="num">4.102.129</td>
+            </tr>
+            <tr>
+                <th>Mato Grosso</th>
+                <td class="num">3.836.399</td>
+            </tr>
+            <tr>
+                <th>Rio Grande do Norte</th>
+                <td class="num">3.446.071</td>
+            </tr>
+            <tr>
+                <th>Piauí</th>
+                <td class="num">3.375.646</td>
+            </tr>
+            <tr>
+                <th>Alagoas</th>
+                <td class="num">3.220.104</td>
+            </tr>
+            <tr>
+                <th>Distrio Federal</th>
+                <td class="num">2.982.818</td>
+            </tr>
+            <tr>
+                <th>Mato Grosso do Sul</th>
+                <td class="num">2.901.895</td>
+            </tr>
+            <tr>
+                <th>Sergipe</th>
+                <td class="num">2.291.077</td>
+            </tr>
+            <tr>
+                <th>Rondônia</th>
+                <td class="num">1.746.227</td>
+            </tr>
+            <tr>
+                <th>Tocantins</th>
+                <td class="num">1.577.342</td>
+            </tr>
+            <tr>
+                <th>Acre</th>
+                <td class="num">880.631</td>
+            </tr>
+            <tr>
+                <th>Amapá</th>
+                <td class="num">802.837</td>
+            </tr>
+            <tr>
+                <th>Roraima</th>
+                <td class="num">716.793</td>
+            </tr>
+        </tbody>        
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td>0000</td>
+                <th scope="row">Total de Habitantes</th>
+                <td><strong>212.583.750</strong></td>
             </tr>
         </tfoot>
     </table>
+
+    <!-- Tfoot  e caption não precisam seguir uma ordem de uso dentro da table -->
 </body>
 </html>

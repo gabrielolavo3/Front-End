@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela com dados "reais"</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+            /* height: 100px; */
+        }
+
+        caption {
+            padding: 10px;
+            background-color: cornflowerblue;
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+
+        thead {
+            position: sticky;
+            top: -1px;
+        }
+
+        th, td {
+            border: 1px solid gray;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- ESTRUTRA DE ESCOPOS
+        Col = Dados em apenas uma coluna, logo abaixo, na vertical
+        Colgroup =  Conjunto de dados agrupados em mais de uma colunas
+
+        Row = Dados em apenas uma linha, logo ao lado, na horizontal
+        Rowgroup = Conjunto de dados agrupados em mais de uma linha
+    -->
+    <table>
+        <caption>Filmes Favoritos por Gênero</caption>
+        <thead>
+            <th scope="col">Grupos</th>
+            <th scope="col">Nomes</th>
+            <th colspan="3" scope="colgroup">Filmes</th>            
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>                
+                <td>Beatriz Sousa</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Claúdia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td>0000</td>
+            </tr>
+            <!-- Nem toda célula mesclada tem seus dados agrupados em mais de uma linha ou coluna -->
+        </tfoot>
+    </table>
+</body>
+</html>
