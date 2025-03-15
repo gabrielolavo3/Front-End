@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de outras páginas</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: chocolate;
+        }
+
+        iframe {
+            display: block;
+            width: 98vw;
+            height: 400px;
+            border: 2px solid black;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- DIRECIONAMENTO DE PÁGINAS PELO IFRAME
+        
+        Para fazer surgir outra página HTML dentro de uma iframe, é preciso usar o parâmetro name="" na tag do iframe
+
+        Depois disso, a tag de link, é necessário apontar o source da próxima página por meio do href e informar qual o alvo que receberá a página. No caso, temos que usar o parâmetro target da tag a e informar qual o nome do iframe
+    -->
+    <h1>Faça uma escolha</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus provident pariatur voluptas recusandae odio voluptate est iure obcaecati sit quos, eveniet dolore distinctio ut magnam dignissimos? Sunt non corrupti veritatis libero alias delectus, ratione minus? Quaerat explicabo, expedita rerum laborum reiciendis dignissimos soluta consectetur sint saepe quae ipsa vitae?
+    </p>
+
+    <ul type="circle">
+        <li><a href="pag1.html" target="frame">Primeira página</a></li>
+        <li><a href="pag3.html" target="frame">Segunda página</a></li>
+        <li><a href="pag4.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus provident pariatur voluptas recusandae odio voluptate est iure obcaecati sit quos, eveniet dolore distinctio ut magnam dignissimos? Sunt non corrupti veritatis libero alias delectus, ratione minus? Quaerat explicabo, expedita rerum laborum reiciendis dignissimos soluta consectetur sint saepe quae ipsa vitae?
+    </p>
+
+    <!-- Exibindo conteúdo de apresentação inicial
+        
+        SRC = Usado para exibir uma página mais elaborada
+        SRCDOC = Usado para criar um código mais simples
+    -->
+    <iframe src="" name="frame" srcdoc="<h1>Escolha uma das opçoes acima</h1>
+        
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla ipsum ipsa nostrum minus consectetur accusamus expedita nemo iure laborum ratione facilis perferendis saepe debitis ab molestiae nesciunt, placeat asperiores modi atque enim repudiandae? Rem quibusdam saepe, repellat sed iusto neque ipsam quasi hic quod eius pariatur qui quas, sapiente perspiciatis.</p>
+        
+        <img src='image/imagem.jpg' width='400px'>">
+        <p>Infelizmente, seu navegador não é compatível</p>
+    </iframe>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus provident pariatur voluptas recusandae odio voluptate est iure obcaecati sit quos, eveniet dolore distinctio ut magnam dignissimos? Sunt non corrupti veritatis libero alias delectus, ratione minus? Quaerat explicabo, expedita rerum laborum reiciendis dignissimos soluta consectetur sint saepe quae ipsa vitae?
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus provident pariatur voluptas recusandae odio voluptate est iure obcaecati sit quos, eveniet dolore distinctio ut magnam dignissimos? Sunt non corrupti veritatis libero alias delectus, ratione minus? Quaerat explicabo, expedita rerum laborum reiciendis dignissimos soluta consectetur sint saepe quae ipsa vitae?
+    </p>
+</body>
+</html>

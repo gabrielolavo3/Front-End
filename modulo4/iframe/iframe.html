@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        /* css predominar na customização do iframe */
+        iframe {
+            width: 400px;
+            height: 400px;
+            border: 1px dashed black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Adicionando o meu primeiro iframe</h1>
+    <p>
+        Você pode usar um 
+
+        <!-- Tamanho padrão 300x150 -->
+        <iframe src="https://www.cursoemvideo.com/" frameborder="0" target="_blank" height="500" scrolling="no"></iframe> para acessar o site do Curso em Vídeo
+    </p>
+
+    <p>
+        Porém, alguns sites não funcionam <iframe src="https://www.youtube.com/" frameborder="0"
+            target="_blank"><a href="https://www.youtube.com/"></a>
+        </iframe>, como o YT
+    </p>
+    <!-- o iframe pode ser traduzido como "quadro de linha" 
+        ele pode ser usado em algumas situações-->
+
+    <p>
+        Você pode acessar o site
+
+        <!-- Pode mudar o tamanho do iframe dentro da própria tag -->
+        <iframe src="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" frameborder="0" height="500" width="500">
+            <a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal">da Wikipedia</a>  <!-- tag a pode ser usado para caso o site não funcione em iframe -->
+        </iframe>de pesquisa
+    </p>
+
+    <!-- Para o elemento iframe, também existe o parâmetro " scrolling ", que igualmente deve ser inserido dentro da tag de abertura do iframe. Esse parâmetro serve para configurar a barra de rolagem do iframe, e ele aceita os seguintes valores: "auto", "yes" e "no".
+
+    auto - É o valor padrão, faz com que a barra de rolagem no iframe apareça e possa ser utilizada normalmente.
+
+    yes - Força a exibição de uma barra de rolagem, mesmo que o site embutido no iframe não tenha uma.
+
+    no - Bloqueia a barra de rolagem do site que está embutido no iframe, impedindo o usuário de scrollar.  
+
+    Você pode também adicionar uma borda com o estilo que preferir no seu iframe, para fazer isso basta inserir a declaração de borda dentro do seletor CSS do iframe -->
+</body>
+
+</html>
